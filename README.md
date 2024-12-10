@@ -3,41 +3,41 @@
 This guide provides instructions to manage services, configure firewalls, and secure your entire Linux server using SELinux and FirewallD.
 
 # Table of Contents
-1. [SELinux Overview](#selinux-overview)
+1. [SELinux Overview](#1selinux-overview)
 - [Protecting Services](#protecting-services)
 
-2. [Firewall Management Using FirewallD](#firewall-mangement-using-firewalld)
-- 1. [Checking Firewall State](#checking-firewall-state)
-- 2. [Stopping and Starting the Firewall](#stopping-and-starting-the-firewall)
-- 3. [Managing Zones in FirewallD](#manging-zones-in-firewalld)
-   - a. [List Available Zones](#list-available-zones)
-   - b. [List Current Zone Configuration](#list-current-zone-configuration)
-   - c. [List All Zones and Their Configurations](#list-all-zones-and-their-configurations)
-- 4. [ICMP Block Inversion](#imcp-block-inversion)
-   - a. [Enable ICMP Block Inversion](#enable-icmp-block-inversion)
-   - b. [Remove ICMP Block Inversion](#remove-imcp-block-inversion)
-- 5. [Adding and Modifying Firewall Rules](#adding-and-modifying-firewall-rules)
-   - a. [Block Traffic from a Specific IP](#block-traffic-from-a-specific-ip)
-   - b. [Add an Interface to a Zone](#add-an-interface-to-a-zone)
-   - c. [Change Interface Zone](#change-interface-zone)
-   - d. [Add Specific Services or Ports](#add-specific-services-or-ports)
-   - e. [Allow All UDP Traffic in a Zone](#allow-all-udp-traffics-in-a-zone)
-   - f. [Add Rich Rules](#add-rich-rules)
-- 6. [Reset and Reload Firewall Rules](#reset-and-reload-firewall-rules)
-   - a. [Reload Rules](#reload-rules)
-   - b. [Add Persistent Rules](#add-persistent-rules)
-- 7. [ICMP Types](imcp-types)
-   - a. [List ICMP Types](list-icmp-types)
-   - b. [Block Specific ICMP Type](#block-specific-imcp-type)
+2. [Firewall Management Using FirewallD](#2firewall-management-using-firewalld)
+- 1. [Checking Firewall State](#1-checking-firewall-state)
+- 2. [Stopping and Starting the Firewall](#2-stopping-and-starting-the-firewall)
+- 3. [Managing Zones in FirewallD](#3-managing-zones-in-firewalld)
+   - a. [List Available Zones](#a-list-available-zones)
+   - b. [List Current Zone Configuration](#b-list-current-zone-configuration)
+   - c. [List All Zones and Their Configurations](#c-list-all-zones-and-their-configurations)
+- 4. [ICMP Block Inversion](#4-icmp-block-inversion)
+   - a. [Enable ICMP Block Inversion](#a-enable-icmp-block-inversion)
+   - b. [Remove ICMP Block Inversion](#b-remove-icmp-block-inversion)
+- 5. [Adding and Modifying Firewall Rules](#5-adding-and-modifying-firewall-rules)
+   - a. [Block Traffic from a Specific IP](#a-block-traffic-from-a-specific-ip)
+   - b. [Add an Interface to a Zone](#b-add-an-interface-to-a-zone)
+   - c. [Change Interface Zone](#c-change-interface-zone)
+   - d. [Add Specific Services or Ports](#d-add-specific-services-or-ports)
+   - e. [Allow All UDP Traffic in a Zone](#e-allow-all-udp-traffic-in-a-zone)
+   - f. [Add Rich Rules](#f-add-rich-rules)
+- 6. [Reset and Reload Firewall Rules](#6-reset-and-reload-firewall-rules)
+   - a. [Reload Rules](#a-reload-rules)
+   - b. [Add Persistent Rules](#b-add-persistent-rules)
+- 7. [ICMP Types](#7-icmp-types)
+   - a. [List ICMP Types](a-list-icmp-types)
+   - b. [Block Specific ICMP Type](#b-block-specific-icmp-type)
 
-3. [HTTP Service Example](#http-service-example)
-   - 1. [Install and Start HTTP Service](#install-and-start-http-service)
-   - 2. [Verify Default Document Root](#verify-default-document-root)
-   - 3. [Add an Index File](#add-an-index-file)
-   - 4. [Verify HTTP Service in Firewall](#verify-http-service-in-firewall)
+3. [HTTP Service Example](#3http-service-example)
+   - 1. [Install and Start HTTP Service](#1-install-and-start-http-service)
+   - 2. [Verify Default Document Root](#2-verify-default-document-root)
+   - 3. [Add an Index File](#3-add-an-index-file)
+   - 4. [Verify HTTP Service in Firewall](#4-verify-http-service-in-firewall)
 
-4. [Additional Commands](#additional-commands)
-   - a. [View All Network Interfaces](#view-all-network-interfaces)
+4. [Additional Commands](#4-additional-commands)
+   - a. [View All Network Interfaces](#a-view-all-network-interfaces)
 
 
 # 1.SELinux Overview
@@ -199,12 +199,12 @@ The html folder contains the default web server files.
 
 
 
-## 4. Add an Index File
+## 3. Add an Index File
 
 
 ![Screenshot from 2024-12-06 23-45-03](https://github.com/user-attachments/assets/9410a53b-d9ca-4418-87a9-2faa39834324)
 
-## 5. Verify HTTP Service in Firewall
+## 4. Verify HTTP Service in Firewall
 
  ![Screenshot from 2024-12-06 23-51-32](https://github.com/user-attachments/assets/cad827ac-de51-49f7-ac7b-0ca5f23e4243)
 
